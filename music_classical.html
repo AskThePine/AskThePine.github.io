@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music:classical</title>
+    <link rel="stylesheet" href="css/header-footer-bg.css">
+    <link rel="stylesheet" href="css/music-main.css">
+
+</head>
+<body>
+    <div class="top">
+        <div class="top-left">
+            <div>
+                <p>L</p>
+            </div>
+            <p>Lan<br />Zi Tong</p>
+        </div>
+        <div class="top-right">
+            <a href="index.html" class="link-home">首页</a>
+            <a href="note.html" class="link-note">笔记</a>
+            <a href="picture.html" class="link-picture">图片</a>
+            <a href="music.html" class="link-music">音乐</a>
+            <a href="about.html" class="link-about">关于</a>
+        </div>
+    </div>
+    <div class="background-dark"></div>
+    <div class="main">
+        <h1>Classical Music</h1>
+        <ul class="album-list">
+            <li class="album">
+                <div class="album-imfo">
+                    <img src="images/music_list_folder1.jpg">
+                    <p class="album-name">Satie: Favorite Music</p>
+                </div>
+                <ul class="album-tracks" id="album1">
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">01. I. Lent et douloureux</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">02. II. Lent et triste</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">03. III. Lent et grave</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="album" id="album2">
+                <div class="album-imfo">
+                    <img src="images/music_list_folder2.jpg">
+                    <p class="album-name">Chopin: Nocturnes <br /> (1999 remastered)</p>
+                </div>
+                <ul class="album-tracks">
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">01. No.1 in B-Flat Minor</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">02. No.2 in E-Flat Major. Andante</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">03. No.3 in B Major</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="album" id="album3">
+                <div class="album-imfo">
+                    <img src="images/music_list_folder3.jpg">
+                    <p class="album-name">Beethoven: Sonatas</p>
+                </div>
+                <ul class="album-tracks">
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">01. Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 Moonlight I. Adagio sostenuto</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">02. Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 Moonlight II. Allegretto</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="playMusic(event)">
+                            <p class="music-name">03. Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2 Moonlight III. Presto agitato</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="music-player" id="music-player">
+        <div class="album-folder" id="album-folder"></div>
+        <div class="player-imfo">
+            <p class="music-name" id="music-name">Start playing music</p>
+            <p class="album-name" id="album-name">album</p>
+            <div class="progress">
+                <div class="bar" id="bar"></div>
+            </div>
+        </div>
+        <audio id="audio" controls>
+            <source src="#" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="bottom">
+        <p>LZT · 2024.4</p>
+    </div>
+</body>
+<script type="text/javascript" src="js/music-player.js"></script>
+</html>
+<!-- 2024/6/6 -->
