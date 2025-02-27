@@ -10,6 +10,6 @@ function setBackgroundImage() {
     if (curDate.getMonth() == 11 && curDate.getDate() == 14) {
         background.style.backgroundImage = 'url(../images/background_Christmas_Eve.jpg)';
     } else {
-        background.style.backgroundImage = 'url(../images/_background.jpg)';
+        background.style.backgroundImage = 'url(../images/background.jpg)';
     }
 }
