@@ -1,0 +1,161 @@
+.main {
+    position: relative;
+    top: 30%;
+    left: 15%;
+    padding: 75px;
+    width: 70%;
+    min-width: 450px;
+    /* height: 1000px; */
+    background-color: white;
+    transform: translateY(70%);
+    transition: transform 1.5s;
+}
+
+body.loaded .main {
+    transform: translateY(0);
+}
+
+.main .title {
+    text-align: center;
+}
+
+.main .title h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.main .title .underline {
+    margin: 5px auto 0 auto;
+    width: 150px;
+    height: 3px;
+    background-color: skyblue;
+}
+
+.main .title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Times New Roman';
+}
+
+.main .about {
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+}
+
+.main .about img {
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+
+.main .about .introduction,
+.main .about .contributors {
+    position: relative;
+    left: 10%;
+    width: 80%;
+    list-style: none;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    /* background-color: ; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.main .about .introduction li {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border-bottom: 1px solid gainsboro;
+    
+}
+
+.main .about .introduction .introduction-left {
+    position: absolute;
+    left: 10px;
+}
+
+.main .about .introduction .introduction-right {
+    position: absolute;
+    right: 10px;
+    color: gray;
+}
+
+.main .about .contributors {
+    margin-top: 20px;
+}
+
+.main .about .contributors > p {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 15px 10px;
+    font-size: 20px;
+}
+
+.main .about .contributors > ul {
+    display: flex;
+    margin: 0 10px 5px 10px;
+    list-style: none;
+}
+
+.main .about .contributors img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+    border: 1px solid gainsboro;
+}
+
+.main .contact {
+    position: relative;
+    left: 10%;
+    width: 80%;
+}
+
+.main form {
+    margin-top: 20px;
+}
+
+.main .contact .form-list {
+    list-style: none;
+    width: 100%;
+}
+
+.main .contact .form-list li {
+    margin-top: 5px;
+}
+
+.main .contact .form-list h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: gray;
+} 
+
+.main .contact .form-list input,
+.main .contact .form-list textarea {
+    width: 100%;
+    height: 30px;
+    border: 1px solid gainsboro;
+    outline: none;
+}
+
+.main .contact .form-list textarea {
+    height: 100px;
+}
+
+.main .contact .form-list .button input {
+    margin-right: 10px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.main .contact .form-list .button input:hover {
+    width: 105px;
+    /* height: 37.5px; */
+    background-color: skyblue;
+    color: white;
+}

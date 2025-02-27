@@ -1,0 +1,278 @@
+/* top */
+.top {
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.top .top-left div {
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}
+
+.top .top-left div p {
+    color: white;
+}
+
+.top .top-left p {
+    color: skyblue;
+}
+
+.top .top-right a {
+    color: black;
+    text-shadow: none;
+}
+
+.top .top-right a:hover {
+    background-color: rgba(220, 220, 220, 0.35);
+    border-radius: 5px;
+}
+
+.background-dark {
+    background-color: whitesmoke;
+}
+
+
+/* main */
+.main {
+    position: relative;
+    top: 0;
+    left: 15%;
+    width: 70%;
+}
+
+/* main-top */
+.main .main-top {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .main-top > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    size: initial;
+}
+
+.main .main-top .user-imfo {
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+
+.main .main-top .user-imfo .user-avatar {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.main .main-top .user-imfo .user-name {
+    position: relative;
+    float: left;
+    /* top: 50%; */
+    /* left: 0; */
+    margin: 25px 0 0 50px;
+    font-size: 26px;
+    color: white;
+}
+
+.main .main-top .user-imfo .user-tagline {
+    position: absolute;
+    top: 65px;
+    left: 200px;
+    width: 35%;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.main .main-top .user-imfo .user-tagline:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* user-statistics */
+.main .user-statistics {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 75px;
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .user-statistics .user-statistics-list {
+    display: flex;
+    position: relative;
+    top: 35%;
+    left: 0;
+    margin-left: 60%;
+    margin-right: 5%;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.main .user-statistics .user-statistics-list li {
+    /* margin: 0 25px 0 25px; */
+    height: 100%;
+}
+
+/* user-updates */
+.main .user-updates {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    width: 70%;
+    /* height: 500px; */
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.main .user-updates > h1 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.main .user-updates > h1::before {
+    position: absolute;
+    left: 35px;
+    width: 7px;
+    height: 45px;
+    content: '';
+    background-color: skyblue;
+}
+
+.main .user-updates .user-updates-list {
+    /* margin-top: 20px; */
+    list-style: none;
+}
+
+.main .user-updates .user-updates-list li {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.main .user-updates .user-updates-list .updates-top {
+    height: 50px;
+}
+
+.main .user-updates .user-updates-list .updates-top img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.main .user-updates .user-updates-list .updates-top h1 {
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.main .user-updates .user-updates-list .updates-top p {
+    margin-left: 60px;
+    font-size: 14px;
+    color: gray;
+}
+
+.main .user-updates .user-updates-list .updates-main {
+    margin-left: 60px;
+}
+
+.main .user-updates .user-updates-list .updates-main img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* main-right */
+.main .main-right {
+    float: left;
+    margin-left: 2%;
+    padding: 25px 20px;
+    width: 28%;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.main .main-right > h1 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main .main-right .underline {
+    position: relative;
+    left: 2.5%;
+    margin-top: 5px;
+    width: 95%;
+    height: 2px;
+    background-color: skyblue;
+}
+
+.main .main-right ul {
+    position: relative;
+    left: 7%;
+    margin-top: 10px;
+    width: 86%;
+    list-style: none;
+    font-size: 14px;
+    color: gray;
+}
+
+.main .main-right ul li {
+    margin-top: 5px;
+}
+
+/* main-bottom */
+.main .main-bottom {
+    position: relative;
+    float: left;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.main .main-bottom p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* bottom */
+.bottom {
+    float: left;
+    top: -5%;
+}
+
+.bottom p {
+   color: rgba(128, 128, 128, 0.25); 
+}

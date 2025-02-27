@@ -1,0 +1,136 @@
+/* top */
+.top {
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.top .top-left div {
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}
+
+.top .top-left div p {
+    color: white;
+}
+
+.top .top-left p {
+    color: skyblue;
+}
+
+.top .top-right a {
+    color: black;
+    text-shadow: none;
+}
+
+.top .top-right a:hover {
+    background-color: rgba(220, 220, 220, 0.35);
+    border-radius: 5px;
+}
+
+/* background */
+.background-dark {
+    background-color: whitesmoke;
+}
+
+/* mian */
+.main {
+    position: relative;
+    top: 20px;    
+    width: 100%;
+}
+
+/* main-top */
+.main .main-top {
+    position: relative;
+    left: 10%;
+    padding: 50px 100px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main .main-top h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.main .main-top h1::before {
+    position: absolute;
+    content: '';
+    left: 100px;
+    width: 10px;
+    height: 45px;
+    background-color: skyblue;
+}
+
+.main .main-top p,
+.main .main-bottom p{
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+/* main-img */
+.main .main-img {
+    position: relative;
+    margin: 20px 0;
+    left: 10%;
+    width: 80%;
+}
+
+.main .main-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.main .main-img li {
+    margin-bottom: 20px;
+    width: 300px;
+    height: 270px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.main .main-img li:hover {
+    transform: translateY(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main .main-img li img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.main .main-img li p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: gray;
+}
+
+/* main-bottom */
+.main .main-bottom {
+    position: relative;
+    left: 10%;
+    padding: 50px 100px;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+/* bottom */
+.bottom {
+    position: initial;
+    bottom: 0;
+}
+
+.bottom p {
+    color: rgba(128, 128, 128, 0.25);
+}

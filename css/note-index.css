@@ -1,0 +1,212 @@
+/* main */
+.main {
+    position: relative;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    min-width: 1200px;
+    /* padding: 50px 10px 100px 10px; */
+}
+
+.main .main-left {
+    position: relative;
+    float: left;    
+    top: 0;
+    left: 10%;
+    width: 55%;
+    padding: 50px 10px 100px 10px;
+    background-color: white;
+    transform: translateY(60%);
+    transition: transform 1.5s;
+}
+
+body.loaded .main-left {
+    transform: translateY(0);
+}
+
+.main .note {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 5%;
+    margin-top: 50px;
+    padding: 20px 25px 20px 25px;
+    width: 80%;
+    color: black;
+    border-radius: 50px 50px 0 50px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.25s;
+}
+
+.main .note:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.main .note h1 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.main .note .note-img {
+    margin: 10px 0 10px 30px;
+    height: 200px;
+    background-size: cover;
+}
+
+.main .note .note-img::before {
+    position: absolute;
+    left: 25px;
+    width: 10px;
+    height: 200px;
+    content: '';
+    background-color: skyblue;
+}
+
+.main .note .note-imf {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.main .note .note-imf div {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    background-size: cover;
+}
+
+.main .note .note-imf .note-imf-calendar {
+    background-image: url(../images/note_imf_calendar.svg);
+}
+
+.main .note .note-imf .note-imf-comment {
+    background-image: url(../images/note_imf_comment.svg);
+}
+
+.main .note .note-imf .note-imf-view {
+    background-image: url(../images/note_imf_view.svg);
+}
+
+.main .note .note-imf .note-imf-like {
+    background-image: url(../images/note_imf_like.svg);
+}
+
+.main .note .note-imf .note-imf-text {
+    margin-right: 20px;
+}
+
+.main .user {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 87.5%;
+    width: 100px;
+    /* height: 100px; */
+    /* color: black; */
+    text-align: center;
+}
+
+.main .user .user-avatar {
+    position: relative;
+    top: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+
+.main .user .user-name {
+    margin-top: 5px;
+}
+
+#note1 .note-img {
+    background-image: url(../images/note_note1_img.jpg);
+}
+
+#user-lzt .user-avatar {
+    background-image: url(../images/note_avatar_lzt_img.jpg);
+}
+
+#note2 .note-img {
+    background-image: url(../images/note_note2_img.jpg);
+}
+
+#user-wxs .user-avatar {
+    background-image: url(../images/note_avatar_wxs_img.jpg);
+}
+
+/* sidebar */
+.sidebar {
+    position: relative;
+    float: left;
+    top: 0;
+    left: 12.5%;
+    /* padding-bottom: 50px; */
+    width: 22.5%;
+    height: 500px;
+    background-color: white;
+    transform: translateY(120%);
+    transition: transform 1.5s; 
+}
+
+body.loaded .sidebar { 
+     transform: translateY(0);
+}
+
+.sidebar .tag {
+    position: relative;
+    top: 10px;
+    left: 10%;
+    padding-top: 25px;
+    width: 80%;
+}
+
+.sidebar .tag .title-line {
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    width: 5px;
+    background-color: skyblue;
+}
+
+.sidebar .tag .title-cn {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+}
+
+.sidebar .tag .title-en {
+    display: inline;
+    vertical-align: bottom;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+.sidebar .tag .tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.sidebar .tag .tag-list a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(135, 206, 235);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    transition: background-color 0.5s;
+}
+
+.sidebar .tag .tag-list a:hover {
+    background-color: rgb(30, 165, 220);
+}
+
+.bottom {
+    float: left;
+}

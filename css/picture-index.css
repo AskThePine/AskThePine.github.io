@@ -1,0 +1,243 @@
+/* main */
+.main {
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+    padding: 75px 0 50px 0;
+    width: 1200px;
+    background-color: white;
+    transform: translateY(70%);
+    transition: transform 1.5s;
+}
+
+body.loaded .main {
+    transform: translateY(0);
+}
+
+/* title */
+.main .title {  
+    text-align: center;
+}
+
+.main .title h1 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.main .title .underline {
+    margin: 5px auto 0 auto;
+    width: 150px;
+    height: 3px;
+    background-color: skyblue;
+}
+
+.main .title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Times New Roman';
+}
+
+/* picture-box */
+.main .picture-box {
+    position: relative;
+    top: 0;
+    margin-top: 50px;
+    padding: 0 100px;
+    height: 550px;
+}
+
+.main .picture-box > h1,
+.main .picture-others h1 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.main .picture-box > h1::before,
+.main .picture-others h1::before {
+    position: absolute;
+    left: 100px;
+    width: 10px;
+    height: 40px;
+    content: '';
+    background-color: skyblue;
+}
+
+/* box-left */
+.main .picture-box .box-left {
+    position: relative;
+    float: left;
+    width: 700px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main .picture-box .prev,
+.main .picture-box .next {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    font-size: 34px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.main .picture-box .prev {
+    left: 0;
+}
+
+.main .picture-box .next {
+    right: 0;
+}
+
+.main .picture-box:hover .prev,
+.main .picture-box:hover .next {
+    opacity: 1;
+}
+
+.main .picture-box a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.main .picture-box .picture-list {
+    display: flex;
+    list-style: none;
+    /* margin-top: 30px; */
+    transition: transform 0.5s;
+}
+
+/* box-right */
+.main .picture-box img {
+    width: 700px;
+    /* height: 400px; */
+    transition: transform 0.5s;
+}
+
+.main .picture-box .box-right {
+    float: left;
+    padding: 25px;
+    width: 300px;
+    height: 450px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main .picture-box .box-right .picture-imfo li {
+    position: relative;
+    display: none; 
+    height: 400px;
+}
+
+.main .picture-box .box-right .picture-imfo li h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main .picture-box .box-right .picture-imfo li p {
+    line-height: 2em;
+    color: gray;
+}   
+
+.main .picture-box .box-right .picture-imfo .read-more {
+    position: absolute;
+    display: block;
+    left: 65px;
+    bottom: 0;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    transition: all 0.5s;
+}
+
+.main .picture-box .box-right .picture-imfo .read-more:hover {
+    background-color: rgb(220, 220, 220);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+/* picture-others */
+.main .picture-others {
+    margin-top: 20px;
+    padding: 0 100px;
+    width: 1200px;
+}
+
+.main .picture-others .others-top {
+    height: 50px;
+}
+
+.main .picture-others .others-top h1 {
+    float: left;
+    margin-bottom: 0;
+}
+
+.main .picture-others .others-top .read-more {
+    display: block;
+    float: left;
+    margin-left: 25px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    background-color: whitesmoke;
+    transition: all 0.5s;
+}
+
+.main .picture-others .others-top .read-more:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(230, 230, 230);
+}
+
+.main .picture-others ul {
+    margin-bottom: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    list-style: none;
+}
+
+.main .picture-others ul li {
+    display: inline-block;
+    margin: 20px 5px;
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.main .picture-others ul li:hover {
+    margin: 20px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.main .picture-others ul li img {
+    height: 200px;
+}
+
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gainsboro;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: skyblue;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}

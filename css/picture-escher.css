@@ -1,0 +1,169 @@
+/* top */
+.top {
+    min-width: 1200px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.top .top-left div {
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}
+
+.top .top-left div p {
+    color: white;
+}
+
+.top .top-left p {
+    color: skyblue;
+}
+
+.top .top-right a {
+    color: black;
+    text-shadow: none;
+}
+
+.top .top-right a:hover {
+    background-color: rgba(220, 220, 220, 0.35);
+    border-radius: 5px;
+}
+
+/* background */
+.background-dark {
+    background-color: whitesmoke;
+}
+
+/* mian */
+.main {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.main p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 2em;
+}
+
+.main h1 {
+    margin-left: 20px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.main h1::before {
+    position: absolute;
+    content: '';
+    left: 50px;
+    width: 10px;
+    height: 45px;
+    background-color: skyblue;
+}
+
+.main h2 {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* main-top */
+.main .main-top {
+    position: relative;
+}
+
+.main .main-top .top-left {
+    float: left;
+    padding: 50px 25px 0 50px;
+    width: 60%;
+    height: 370px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 0 20px;
+}
+
+.main .main-top .top-right {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.main .main-top .top-right img {
+    width: 100%;
+    height: 370px;
+    border-radius: 0 0 20px 0;
+}
+
+/* main-middle */
+.main .main-middle {
+    position: relative;
+    width: 100%;
+}
+
+.main .main-middle .middle-list {
+    display: flex;
+    padding: 20px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.main .main-middle .middle-list li {
+    position: relative;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.main .main-middle .middle-list li:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.main .main-middle .middle-list .img {
+    padding: 15px;
+    width: 35%;
+    text-align: center;
+}
+
+.main .main-middle .middle-list h1::before {
+    left: 20px;
+}
+
+.main .main-middle .middle-list .img img {
+    max-width: 100%;
+    max-height: 250px;
+    transition: all 1s;
+}
+
+.main .main-middle .middle-list .img:hover img {
+    max-height: 400px;
+}
+
+.main .main-middle .middle-list .para {
+    width: 60%;
+}
+
+/* main-bottom */
+.main .main-bottom {
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: white;
+}
+
+/* bottom */
+.bottom {
+    position: initial;
+    bottom: 0;
+}
+
+.bottom p {
+    color: rgba(128, 128, 128, 0.25);
+}

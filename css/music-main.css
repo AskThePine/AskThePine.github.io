@@ -1,0 +1,231 @@
+.top {
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.top .top-left div {
+    background-color: skyblue;
+    border: 1px solid skyblue;
+}
+
+.top .top-left div p {
+    color: white;
+}
+
+.top .top-left p {
+    color: skyblue;
+}
+
+.top .top-right a {
+    color: black;
+    text-shadow: none;
+}
+
+.top .top-right a:hover {
+    background-color: rgba(220, 220, 220, 0.35);
+    border-radius: 5px;
+}
+
+.background-dark {
+    background-color: whitesmoke;
+}
+
+.main {
+    position: relative;
+    margin: 20px auto;
+    padding: 50px 0 ;
+    width: 1200px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main > h1 {
+    margin-left: 220px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.main > h1::before {
+    position: absolute;
+    left: 200px;
+    width: 10px;
+    height: 45px;
+    content: '';
+    background-color: skyblue;
+}
+
+.main .album-list {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    list-style: none;
+    justify-content: center;
+}
+
+.main .album {
+    position: relative;
+    margin: 0 0 50px 0;
+    width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.main .album:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.main .album-imfo {
+    float: left;
+    width: 200px;
+}
+
+.main .album-imfo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.main .album-imfo .album-name {
+    text-align: center;
+}
+
+.main .album-imfo .album-introduction {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.main .album-tracks {
+    float: left;
+    margin: 25px 20px 25px 20px;
+    width: 70%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    list-style: none;
+}
+
+.main .album-tracks li {
+    position: relative;
+    margin: 10px 0;
+    margin-right: 10px;
+    width: 100%;
+    /* height: 55px; */
+    background-color: rgb(241, 243, 244);
+    /* border: 0px; */
+    border-radius: 0 30px 30px 0;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
+    line-height: 55px;
+    transition: box-shadow 0.5s;
+}
+
+.main .album-tracks li:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.main .music-name {
+    position: relative;
+    left: 0;
+    padding: 0 10px 0 20px;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* background-color: #fff; */
+    transition: all 1s;
+    z-index: 10;
+}
+
+.music-player .album-folder {
+    float: left;
+    margin: 25px 0 0 200px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    /* background-color: gainsboro; */
+    background-image: url(../images/music_list_folder0.png);
+    background-size: cover;
+    transition: all 1s;
+}
+
+.music-player .player-imfo {
+    float: left;
+    margin: 30px 0 0 25px;
+}
+
+.music-player .player-imfo .music-name {
+    display: inline-block;
+    font-size: 30px;
+    max-width: 800px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.music-name-marquee {
+    animation: marquee 10s linear infinite;
+}
+
+/* 音乐名字滚动 */
+@keyframes marquee {
+    0% {
+        text-indent: 0%;
+    }
+
+    100% {
+        text-indent: -100%;
+    }
+}
+
+.music-player .player-imfo .album-name {
+    font-size: 18px;
+}
+
+.music-player .progress {
+    position: relative;
+    margin-top: 10px;
+    width: 800px;
+    height: 12px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.music-player .progress .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 12px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    transition: all 0.1s;
+}
+
+.music-player audio {
+    float: left;
+    margin: 50px;
+}
+
+
+.bottom {
+    top: 0;
+    bottom: 10px;
+    height: 200px;
+}
+
+.bottom p {
+    top: 0px;
+    color: rgba(128, 128, 128, 0.25);
+}

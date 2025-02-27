@@ -1,0 +1,75 @@
+.main {
+    position: relative;
+    top: 30%;
+    left: 15%;
+    padding: 100px 75px 50px 75px;
+    width: 70%;
+    background-color: white;
+    transform: translateY(70%);
+    transition: transform 1.5s;
+}
+
+body.loaded .main {
+    transform: translateY(0);
+}
+
+.main .main-img {
+    background-position: center left;
+    background-size: cover;
+}
+
+#note1-img1 {
+    height: 800px;
+    background-image: url(../images/note1_img1.jpg);
+}
+
+#note2-img1 {
+    margin: 20px auto;
+    height: 400px;
+    background-image: url(../images/note2_img1.jpg);
+}
+
+.main h1 {
+    margin-left: 20px;
+}
+
+.main h1::before {
+    position: absolute;
+    left: 75px;
+    width: 10px;
+    height: 50px;
+    content: '';
+    background-color: skyblue;
+}
+
+.main h1,
+h2 {
+    margin-bottom: 10px;
+}
+
+.main p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.main .note-pager {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.main .note-pager a {
+    display: block;
+    position: absolute;
+}
+
+.main .note-pager .previous-note {
+    left: 0;
+}
+
+.main .note-pager .next-note {
+    right: 0;
+}
